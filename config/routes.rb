@@ -32,6 +32,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'contactus', to:  'contact_us/contacts#new'
   get 'product_reviews', to: 'pages#product_reviews'
+  get 'recruitment', to: 'pages#recruitment'
   get 'new_product_delivery', to: 'pages#new_product_delivery'
   get 'best_fit_product_delivery', to: 'pages#best_fit_product_delivery'
   get 'tweets', to: 'tweets#index'
