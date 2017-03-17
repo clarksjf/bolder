@@ -14,11 +14,11 @@
  
     <!-- Navigation Bar -->
 <nav class="navbar navbar-toggleable-md sticky-top navbar-light bg-faded">
+  <div class="container">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-<!-- <nav class="navbar navbar-light bg-faded"> -->
 
 <!-- Just an image -->
 
@@ -44,28 +44,36 @@
           <li class="nav-item">
         <a class="nav-item"><%= link_to "Recruitment", recruitment_path, class: "nav-link" %></a>
       </li>
-    </ul>
+
+
 
 
        <% if user_signed_in? %>
 
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Client Tools</a>
+   
+        <li class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Client Tools</li>
         <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
           <a class="dropdown-item" href="tweets">Invoices</a>
           <a class="dropdown-item" href="items">Projects</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
+        </li>
+       
+
+         <li class="nav-item float-md-right"><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %></li>
 
          <% else %>
+
+
+
          <a class="button" class="btn btn-primary btn-sm"><%= link_to "Sign up", signup_path, class: "btn btn-primary" %></a>
 
-          <a class="nav-item float-md-right"><%= link_to "Sign in", signin_path, class: "nav-link" %></a>
-
-          </ul>
+          <a class="nav-item float-md-right"><%= link_to "Sign in", signin_path, class: "nav-link" %></a>   
       <% end %>
+
+    
+
+  
     </form>
   </div>
 </nav>
