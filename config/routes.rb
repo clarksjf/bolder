@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :items
   ActiveAdmin.routes(self)
 
   devise_for :users
