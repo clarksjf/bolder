@@ -1,4 +1,4 @@
-clclass FollowsController < ApplicationController
+class FollowsController < ApplicationController
   before_action :authenticate_user!
 
   def create
@@ -13,4 +13,3 @@ clclass FollowsController < ApplicationController
     redirect_to user_path(user.username), notice: "Succesfully unfollowed user"
   end
 end
-
