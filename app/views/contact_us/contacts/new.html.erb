@@ -8,8 +8,8 @@
 <% else %>
     <div class="jumbotron jumbotron-home">
         <div class="container">      
-            <h1>Contact us</h1>
-        </div>
+<!--             <h1>Contact us</h1>
+ -->        </div>
     </div>
     <div class="container">
 
@@ -32,7 +32,7 @@
       </div>
     <% end %>
 
-</br>
+
 </br>
 
       <label for="contact_us_contact_name_input" class="col-sm-2 control-label"><%= f.label :email, (t('.email') + content_tag(:abbr, '*', :class => 'required')).html_safe %></label>
@@ -43,7 +43,7 @@
            <p class='inline-error'><%= f.object.errors[:email].join(' and ') %></p>
           <% end %>
         </div>
-</br>
+
 </br>
 
   <% if ContactUs.require_subject %>
@@ -57,7 +57,7 @@
     </div>
   <% end %>
 
-</br>
+
 </br>
     <label for="contact_us_contact_name_input" class="col-sm-2 control-label"><%= f.label :message, (t('.message') + content_tag(:abbr, '*', :class => 'required')).html_safe %></label>
         <div class="col-sm-8">
@@ -76,11 +76,12 @@
 
 
 </br>
-</br>
+
 </br>
 </br>
   <div class='commit'>
     <%= f.submit :submit, :class => 'submit create', :title => t('.submit') %>
+<!--     <%= f.submit "My Submit Text" %> -->
   </div>
 <% end %>
 </div>
