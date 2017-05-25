@@ -1,6 +1,20 @@
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-  <h2>Log in</h2>
+    <meta charset="utf-8">
+    <div class="jumbotron jumbotron-home">
+    </div>
+
+
+
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+ 
+
+<div class="container">
+<div class="text-center wow fadeIn">
+<h2>Log In</h2>
+<hr class="colored">
+</div>
+</div>
   
   <div class="form-group">
     <%= f.label :email %>
@@ -25,3 +39,6 @@
 <center>
   or <%= render "devise/shared/links" %>
 </center>
+
+<br>
+<br>

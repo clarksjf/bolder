@@ -50,7 +50,8 @@ gem 'contact_us', '~> 1.0.1'
 # sc added to allow emails to be sent from heroku using sendgrid
 gem 'sendgrid-ruby'
 
-
+gem 'therubyracer'
+gem 'less-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
