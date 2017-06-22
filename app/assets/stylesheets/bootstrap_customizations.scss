@@ -361,12 +361,15 @@ h6 {
 }
 @media (min-width: 992px) {
   #mainNav {
-    padding: 30px 0;
+      // Short term fix to the fact that the nav was remaining transparent all the time. Need to come back and resolve. sc  
+    padding: 10px 0; 
+    // padding: 30px 0;
     -webkit-transition: padding .5s;
     -moz-transition: padding .5s;
     transition: padding .5s;
     border: 0;
-    background-color: transparent;
+    // background-color: transparent;
+    background-color: #222;
   }
   #mainNav.navbar-shrink {
     padding: 5px 0;
